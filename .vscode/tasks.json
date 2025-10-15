@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Install requirements",
+      "type": "shell",
+      "command": "python -m pip install --upgrade pip && python -m pip install -r requirements.txt",
+      "group": "none"
+    },
+    {
+      "label": "Download data",
+      "type": "shell",
+      "command": "python \"Scripts/Data Downloader.py\"",
+      "group": "none"
+    },
+    {
+      "label": "Run Streamlit app",
+      "type": "shell",
+      "command": "streamlit run \"Scripts/Financial Analysis App.py\"",
+      "group": "none",
+      "isBackground": true
+    },
+    {
+      "label": "Run tests",
+      "type": "shell",
+      "command": "python -m pytest -q",
+      "group": "test"
+    }
+  ]
+}

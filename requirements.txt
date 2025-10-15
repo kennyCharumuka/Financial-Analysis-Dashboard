@@ -1,0 +1,9 @@
+pandas==2.3.3
+yfinance==0.2.66
+pandas_datareader==0.10.0
+requests
+statsmodels
+streamlit
+plotly
+duckdb
+pytest
